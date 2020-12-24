@@ -2,3 +2,14 @@
     margin-bottom: 15px;
     
 }
+
+.list {
+    align-items: center !important;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.list-li {
+    border: none;
+}
