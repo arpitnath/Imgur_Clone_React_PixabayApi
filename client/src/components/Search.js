@@ -1,12 +1,20 @@
-import React from "react";
-import { Form, Button, FormControl, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Form, Button, FormControl, Col } from "react-bootstrap";
 
-const Search = () => {
+const Search = ({ searchText }) => {
+  const [text, setText] = useState("");
+
+  const SearchFn = (e) => {
+    e.preventDefault();
+    searchText(text);
+  };
+
   return (
     <>
-      <Form inline className="search">
+      <Form onSubmit={SearchFn} inline className="search">
         <Col md={10}>
           <FormControl
+            onChange={(e) => setText(e.target.value)}
             type="text"
             placeholder="Search"
             className="mr-sm-2 searchbar"

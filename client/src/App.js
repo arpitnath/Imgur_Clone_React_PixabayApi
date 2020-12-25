@@ -19,12 +19,12 @@ function App() {
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [term]);
 
   return (
     <>
       <Container>
-        <Serach />
+        <Serach searchText={(text) => setTerm(text)} />
         {isLoading ? (
           <Alert varient="info">Loading..</Alert>
         ) : (
