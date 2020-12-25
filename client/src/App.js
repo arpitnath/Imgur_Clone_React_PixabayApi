@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Alert, Col, Container, Row } from "react-bootstrap";
 import ImgCard from "./components/ImgCard";
 
 function App() {
@@ -23,19 +23,23 @@ function App() {
   return (
     <>
       <Container>
-        <Row>
-          {images.map((image) => (
-            <Col
-              key={image.id}
-              sm={12}
-              md={6}
-              lg={3}
-              xl={4}
-              className="imgContainer">
-              <ImgCard image={image} />
-            </Col>
-          ))}
-        </Row>
+        {isLoading ? (
+          <Alert varient="info">Loading..</Alert>
+        ) : (
+          <Row>
+            {images.map((image) => (
+              <Col
+                key={image.id}
+                sm={12}
+                md={6}
+                lg={3}
+                xl={4}
+                className="imgContainer">
+                <ImgCard image={image} />
+              </Col>
+            ))}
+          </Row>
+        )}
       </Container>
     </>
   );
