@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { Alert, Col, Container, Row } from "react-bootstrap";
 import ImgCard from "./components/ImgCard";
+import Serach from "./components/Search";
 
 function App() {
   const [images, setImages] = useState([]);
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <Container>
+        <Serach />
         {isLoading ? (
           <Alert varient="info">Loading..</Alert>
         ) : (
