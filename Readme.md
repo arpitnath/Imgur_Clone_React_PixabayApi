@@ -6,6 +6,6 @@
 ![imgurclone](https://drive.google.com/file/d/13iTBPV91BOPZmsUlTj6xBEu9eHGhKwi4/view)
 
 ## Desription
-- **Frontend** of the [IMGUR](./images/img.png) app, which is an image hosting site.
+- **Frontend** of the [IMGUR](images/img.png) app, which is an image hosting site.
 -  Build with React JS and React Hooks
     
