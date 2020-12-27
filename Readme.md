@@ -8,4 +8,24 @@
 ## Desription
 - **Frontend** of the [IMGUR](images/img.png) app, which is an image hosting site.
 -  Build with React JS and React Hooks
-    
+
+
+## Pixabay API
+Add your **Pixabay API** key from [https://pixabay.com/api/docs/](https://pixabay.com/api/docs/)
+
+Add your API key in `.env` file
+```javascript
+REACT_APP_PIXABAY_API_KEY=yourapikey
+
+```
+
+```javascript
+# Install dependencies
+npm install
+
+```
+
+
+
+
+
