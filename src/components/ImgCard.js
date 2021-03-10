@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Button, Card, ListGroup } from "react-bootstrap";
+import Img from "react-cloudimage-responsive";
+
 
 const ImgCard = ({ image }) => {
   const [incrementLikes, setIncrementLikes] = useState(image.likes);
@@ -12,7 +14,7 @@ const ImgCard = ({ image }) => {
   return (
     <>
       <Card style={{ width: "18rem" }} className="cardimg">
-        <Card.Img variant="top" src={image.webformatURL} />
+        <Img variant="top" src={image.webformatURL} />
         <Card.Body>
           <Card.Title>{image.tags}</Card.Title>
           <Card.Text className="card_body">
